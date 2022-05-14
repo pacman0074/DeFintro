@@ -11,7 +11,7 @@ module.exports = async function(deployer, _network, accounts) {
 	await myDeFiProject.foo("0xFbb3c5D54cAf9A34C56A6B84fcd9D501f868aBa6", 100);
 
 	const balance0 = await dai.balanceOf(myDeFiProject.address);
-	const balance1 = await dai.balanceOf("0xFbb3c5D54cAf9A34C56A6B84fcd9D501f868aBa6");
+	const balance1 = await dai.balanceOf("0xFbb3c5D54cAf9A34C56A6B84fcd9D501f868aBa6" );
 
 	console.log(balance0.toString());
 	console.log(balance1.toString());
